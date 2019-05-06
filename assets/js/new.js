@@ -27,25 +27,33 @@ firebase.initializeApp({
   });
 
   // Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
+// var db = firebase.firestore();
 
 // Leer documentos
-var tabla = document.getElementById('tabla');
-console.log(tabla);
+// var tabla = document.getElementById('tabla');
+// console.log(tabla);
 
-db.collection("carreras").get().then((querySnapshot) => {
-    tabla.innerHTML = '';
-    querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data().autor}`);
-        tabla.innerHTML +=  `
+// db.collection("carreras").get().then((querySnapshot) => {
+//     tabla.innerHTML = '';
+//     querySnapshot.forEach((doc) => {
+//         console.log(`${doc.id} => ${doc.data().autor}`);
+//         tabla.innerHTML +=  `
+//         <li class="icon fa-paper-plane-o" >
+//         <a href="generic.html" onclick="hola()"><h3>${doc.data().nombre}</h3></a>
+//         <a href="generic.html" ><p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p></a>
+//         </li>
+//         `
+//     });
+// });
 
-        <li class="icon fa-paper-plane-o" >
-        <h3>${doc.data().nombre}</h3>
-			<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-		</li>
-        `
-    });
-});
+localStorage.setItem("")
+
+function myFunction(){
+    console.log('hola');
+}
+function hola(){
+    console.log("holis")
+}
 
 // db.collection("carreras").get().then((querySnapshot) => {
 //     tabla.innerHTML = '';

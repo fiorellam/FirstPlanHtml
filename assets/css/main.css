@@ -4112,3 +4112,22 @@ input, select, textarea {
 	background-size: cover;
 	text-align: center;
 }
+.icon_side{
+	float: left;
+}
+.icon_side a{
+	float: right;
+}
+.features li {
+	padding: 6em 3em 2em 2em;
+
+}
+
+/* li{
+	padding: 0;
+}
+a{
+	display: block;
+	width: 120px;
+	height: 34px;
+} */
