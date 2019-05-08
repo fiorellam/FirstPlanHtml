@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	z-index: 1;
 }
 
 ol, ul {
@@ -2638,7 +2639,7 @@ input, select, textarea {
 
 				.features li {
 					padding: 3em 0 1em 0 ;
-					background-color: transparent !important;
+					/* background-color: transparent !important; */
 					border-top: solid 2px #fff;
 					width: 100%;
 				}
@@ -3331,7 +3332,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			width: 100%;
-			z-index: 10001;
+			/* z-index: 10001; */
 		}
 
 	#menu {
@@ -3354,7 +3355,7 @@ input, select, textarea {
 		right: 0;
 		top: 0;
 		width: 20em;
-		z-index: 10002;
+		/* z-index: 10002; */
 	}
 
 		#menu ul {
@@ -3445,7 +3446,7 @@ input, select, textarea {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		/* z-index: 10000; */
 	}
 
 		#header h1 {
@@ -3808,10 +3809,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBackground.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBackground.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBackground.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBackground.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBack.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBack.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBack.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bannerBack.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3958,10 +3959,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		/* background-image:  url("../images/bannerBackground.jpg");
-		background-image:  url("../images/bannerBackground.jpg");
-		background-image: url("../images/bannerBackground.jpg");
-		background-image:  url("../images/bannerBackground.jpg"); */
+		/* background-image:  url("../images/bannerBack.jpg");
+		background-image:  url("../images/bannerBack.jpg");
+		background-image: url("../images/bannerBack.jpg");
+		background-image:  url("../images/bannerBack.jpg"); */
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4022,7 +4023,7 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
 
 	#header{
-		height: 100% !important;
+		/* height: 100% !important; */
 	}
 	#header nav > ul > li > a {
 		padding: 0 !important;
@@ -4091,10 +4092,10 @@ input, select, textarea {
 	color: #3f338b;
 }
 #banner{
-	background-image:  url("images/bannerBackground.jpg");
-	background-image: url("images/bannerBackground.jpg");
-	background-image: url("images/bannerBackground.jpg");
-	background-image:  url("images/bannerBackground.jpg");
+	background-image:  url("images/bannerBack.jpg");
+	background-image: url("images/bannerBack.jpg");
+	background-image: url("images/bannerBack.jpg");
+	background-image:  url("images/bannerBack.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4102,10 +4103,10 @@ input, select, textarea {
 	text-align: center;
 }
 #form{
-	background-image:  url("images/formBackground2.jpg");
-	background-image: url("images/formBackground2.jpg");
-	background-image: url("images/formBackground2.jpg");
-	background-image:  url("images/formBackground2.jpg");
+	background-image:  url("images/formBack.jpg");
+	background-image: url("images/formBack.jpg");
+	background-image: url("images/formBack.jpg");
+	background-image:  url("images/formBack.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4131,3 +4132,55 @@ a{
 	width: 120px;
 	height: 34px;
 } */
+#secondary{
+	position: relative !important;
+}
+#header{
+	z-index: 2;
+}
+.header-height{
+	height: 100% !important;
+}
+@media screen and (max-width: 1400px) {
+	iframe{
+		height: 570px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	iframe{
+		height: 400px;
+	}
+}
+@media screen and (max-width: 736px) {
+	iframe{
+		height: 240px;
+	}
+}
+@media screen and (max-width: 640px) {
+	#header{
+		background: transparent;
+	}
+	iframe{
+		height: 207px;
+	}
+}
+@media screen and (max-width: 569px) {
+	#header{
+		background: transparent;
+	}
+	iframe{
+		height: 185px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header{
+		background: transparent;
+	}
+	iframe{
+		height: 181px;
+	}
+}
+.menu_barr img{
+	background: #3f338b;
+}
